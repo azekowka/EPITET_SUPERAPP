@@ -1,0 +1,34 @@
+.cursor-follower {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.cursor-image.false{
+  width: 55px; 
+  height: 55px; 
+}
+
+.cursor-image.true{
+  width: 55px; 
+  height: 55px; 
+  filter: drop-shadow(0 0 20px rgba(255, 255, 0, 0.8));
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: sparkleAnimation 1s linear infinite; 
+}
+
+@keyframes sparkleAnimation {
+  0% {
+    opacity: 0.3; /* Устанавливаем более низкую прозрачность */
+  }
+  50% {
+    opacity: 1; /* Устанавливаем более высокую прозрачность */
+  }
+  100% {
+    opacity: 0.3; /* Возвращаем более низкую прозрачность */
+  }
+}
