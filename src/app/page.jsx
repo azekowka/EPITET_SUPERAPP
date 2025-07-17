@@ -85,13 +85,13 @@ function Page() {
 
     try {
       if (isQuotes) {
-        const response = await axios.post('http://localhost:8000/quotes', {
+        const response = await axios.post('/api/quotes', {
           prompt: inputValue,
         });
         console.log(response.data);
         setGeneratedQuotes(response.data.quotes);
       } else {
-        const response = await axios.post('http://localhost:8000/message', {
+        const response = await axios.post('/api/epithets', {
           message: inputValue,
         });
         console.log(response.data);
