@@ -5,7 +5,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'EPITET SUPER APP',
-  description: 'by Bakhredin Zurgambayev',
+  description: 'by Bakhredin Zurgambayev, Aziz & Igor',
 }
 
 export default function RootLayout({ children }) {
